@@ -1,43 +1,57 @@
-body
-{
-background-color:#C8C8C8 ;
-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D8D8D8 ', EndColorStr='#A0A0A0');
-		background: -webkit-gradient(linear, left top, left bottom, from(#D8D8D8 ), to(#A0A0A0));
-		background: -moz-linear-gradient(top, #D8D8D8 , #A0A0A0);
-	
+
+html {
+    height: 100%;
 }
+
+body
+ {
+ 
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#202020');
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#202020));
+    background: -moz-linear-gradient(top, #FFFFFF, #202020);
+    height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  
+}
+ 
+
 
 .wrapper
 {
 width:960px;
 margin:auto;
-
 }
 
 .pageHeader
 {
- padding-top:18px;
-  font-family: Tahoma, Arial, Helvetica, Sans-Serif;  
-  color: #ffffff;
-  text-align: center; 
-  font: normal bold 26px Arial; 
+padding-top:18px;
+font-family: Tahoma, Arial, Helvetica, Sans-Serif;  
+color: #ffffff;
+text-align: center; 
+font: normal bold 26px Arial; 
 position:relative; 
 
 }
 
+h3
+{
+color: #e69138;
+}
 .header
 {
-height:25%;
+height:20%;
 background-color:#6B6B6B ;
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
+
 }
 
 .content
 {
 clear:both;
 width:960px;
-height:75%;
+height:auto;
 background-color:white ;
 border: 1px solid #efefef;
 border-bottom-left-radius: 13px;
@@ -48,17 +62,9 @@ overflow:auto;
 
 .post
 {
-height:87%;
 float:left;
-width:80%;
-}
-
-.footer
-{
-height:11%;
-background-color:gray ;
-border-bottom-left-radius: 13px;
-border-bottom-right-radius: 13px;
+width:78%;
+height:auto;
 }
 
 h2
@@ -73,7 +79,7 @@ h2
 .rightNav
 {
 clear:both;
-margin-left:79%;
+margin-left:80%;
 float:right;
 position:absolute;
 width: 20%; 
@@ -84,8 +90,6 @@ width: 20%;
  display:inline;
  }
  
- 
-
 .text
 {
 font-family: Tahoma, Arial, Helvetica, Sans-Serif;
@@ -93,6 +97,7 @@ font-size: 14px;
 color: #16221D;
 text-decoration:none;
 margin-left:8px;
+line-height:1.5em;
 }
 .rightLinks{
 margin: 5px;
@@ -151,7 +156,7 @@ background-color:#226688;
 
 .menutext:hover 
 {
- background-color:#7EA4DA;
+ background-color:#e69138;
 }
 
 .lefttext:hover {color:#1D2225;
@@ -169,7 +174,7 @@ background-color:#226688;
  padding-top: 5px;
  text-align: center;
   background-color: #B5B5B5;
-  border: 1px solid #313031;
+  border: 01px solid #313031;
   border-radius: 8px;
   text-decoration:none;
  }
@@ -177,5 +182,5 @@ background-color:#226688;
 .tabs:hover 
 {
  font: italic bold 14px Arial ; 
- background-color:#505050 ;
+ background-color:#e69138 ;
 }

@@ -4,99 +4,72 @@
 </head>
 <body>
 <div class="wrapper">
-		<div class="header">
-		<div class="pageHeader">Technology Unleashed</div>		
-			<div>		
-			 <a href="index.html" class="inline tabs">HOME</a>  
-			  <a href="About.html" class="inline tabs">About Me</a>  
-			  <a href="Ignite.html" class="inline tabs">Blogs</a>  	 		 	 
-			</div>
+	<div class="header">
+	<div class="pageHeader">Technology Unleashed</div>		
+		<div>		
+		 <a href="index.html" class="inline tabs">HOME</a>  
+		  <a href="About.html" class="inline tabs">About Me</a>  
+		  <a href="Ignite.html" class="inline tabs">Blogs</a>  	 		 	 
 		</div>
+	</div>
 	  
-		<div class="content">
-			<div class="post">			
-			<div dir="ltr" style="text-align: left;" trbidi="on">
-<br />
-<div style="text-align: center;">
-<span style="background-color: white; color: #3d85c6; font-family: Verdana, sans-serif; font-size: x-large;"><i>JavaScript Basics</i></span></div>
-<span style="font-family: Verdana, sans-serif; font-size: x-small;"><br /></span><br />
-<span style="color: #e69138; font-family: Verdana, sans-serif; font-size: large;">What is JavaScript?</span><br />
-<br />
-<span style="font-family: Verdana, sans-serif; font-size: x-small;">&nbsp; &nbsp; &nbsp;</span><span style="font-family: Verdana, sans-serif;"> JavaScript is a client side scripting language used to improve the usability and functionality of websites and web applications.A simple example of this is client-side validation.It provides all the basic language elements that you'd find in any programming language: &nbsp;variables, arrays, objects, control flow, arithmetic operations, boolean operations, functions, etc.&nbsp;</span><br />
-<span style="font-family: Verdana, sans-serif;"></span><br />
-<span style="font-family: Verdana, sans-serif;"><span style="font-size: x-small;">&nbsp; &nbsp; &nbsp; &nbsp;</span> Consider a scenario where we have to validate a form which is incorrectly filled.Without client side validation, a developer would have to process the contents of a form via a web server, and then send a response back if the form was completed incorrectly. JavaScript can eliminate this by simply validating the data directly in a web browser.</span><br />
-<div style="font-size: small;">
-<span style="font-family: Verdana, sans-serif;"><br /></span></div>
-<span style="font-family: Verdana, sans-serif;">Common usage of JavaScript is listed below</span><br />
-<br />
-<ul style="text-align: left;">
-<li><span style="font-family: Verdana, sans-serif;">Validate Forms – Ensure all required fields are entered, Ensure fields are entered as per &nbsp;specific format etc.</span></li>
-<li><span style="font-family: Verdana, sans-serif;">Create Cookies – Stores and retrieves information on a visitor’s computer.</span></li>
-<li><span style="font-family: Verdana, sans-serif;">JavaScript can enhance the interfaces HTML gives us.&nbsp;</span></li>
-<li><span style="font-family: Verdana, sans-serif;">You can use JavaScript to animate elements on a page — for example to show and hide information, or highlight specific sections of a page — this can make for a more usable, richer user experience.</span></li>
-</ul>
-<span style="font-family: Verdana, sans-serif;"><span style="font-size: large;"><span style="color: #e69138;">Equality Operators</span>&nbsp;</span><br />
-<br />
-<b>standard equality operators</b><br />
-<br />
-The standard equality operators (== and !=) compare two operands without regard to their type. If either operand is a number or a boolean, the operands are converted to numbers if possible; else if either operand is a string, the other operand is converted to a string if possible. If both operands are objects, then JavaScript compares internal references which are equal when operands refer to the same object in memory.<br />
-</span><br />
-<ul style="text-align: left;"></ul>
-<span style="font-family: Verdana, sans-serif;">
-Equal (==)<br /><ul style="text-align: left;"></ul>
-&nbsp;If the two operands are not of the same type, JavaScript converts the &nbsp; &nbsp; operands then applies strict comparison.<br />
-&nbsp;123 == "123"<br />
-&nbsp;true == 1<br />
-<br />
-<ul style="text-align: left;"></ul>
-Not equal (!=)<br /><ul style="text-align: left;"></ul>
-Returns true if the operands are not equal. If the two operands are not of the same type, JavaScript attempts to convert the operands to an appropriate type for the comparison.<br />
-&nbsp;var1 != 4<br />
-&nbsp;var1 != "5"<br />
-<br />
-<b>strict &nbsp;equality operators</b><br />
-<br />
-The strict equality operators (=== and !==) perform equality comparisons on operands of the same type.<br />
-<br />
-Strict equal (===)<br />
-Returns true if the operands are strictly equal with no type conversion.<br />
-123 == "123"<br />
-<br />
-Strict not equal (!==)<br />
-Returns true if the operands are not equal and/or not of the same type.<br />
-3 !== '3'<br />
-<br />
-<span style="color: #e69138; font-size: large;">Console.log</span><br />
-<br />
-I have also came accross Console.log recently. We can view any messages logged to the console if you use a tool such as Firebug to inspect your code (or whichever tool you decide to use to inspect your code). This is particularly useful when you want to see if a function is executing, or if a variable is being passed/assigned properly or &nbsp;just for figuring out what went wrong with your code.<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-uxKsG83JlOY/T12z5pvrAUI/AAAAAAAABXs/almrfuu3Umw/s1600/Console.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="153" src="http://3.bp.blogspot.com/-uxKsG83JlOY/T12z5pvrAUI/AAAAAAAABXs/almrfuu3Umw/s320/Console.png" width="320" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: left;">
-Advantages of using Console.log</div>
-<div class="separator" style="clear: both; text-align: left;">
-</div>
-<ul style="text-align: left;">
-<li>it does not halt processes like alert does</li>
-<li>It is non-blocking</li>
-<li>You can log objects for instance, and then inspect them.</li>
-<li>you can see what line of what script threw the log entry without putting the line into your message</li>
-<li>if you have more than one thing you're debugging it can get real annoying to keep hitting 'ok' on your alert boxes.</li>
-</ul>
-<br />
-<div class="separator" style="clear: both; text-align: left;">
-Hope it helps you !!</div>
-<div>
-<br /></div>
-<br />
-<br />
-<br />
-</span></div>
-
+	<div class="content">
+		<div class="post">			
+		<div dir="ltr" style="text-align: left;"  class="text" trbidi="on">
+		<h1>JavaScript Basics</h2>
+		<h3 style="color: #e69138;">What is JavaScript?</h3>
+		 JavaScript is a client side scripting language used to improve the usability and functionality of websites and web applications.A simple example of this is client-side validation.It provides all the basic language elements that you'd find in any programming language: &nbsp;variables, arrays, objects, control flow, arithmetic operations, boolean operations, functions, etc.</br></br>
+		Consider a scenario where we have to validate a form which is incorrectly filled.Without client side validation, a developer would have to process the contents of a form via a web server, and then send a response back if the form was completed incorrectly. JavaScript can eliminate this by simply validating the data directly in a web browser.
+		Common usage of JavaScript is listed below<br />
+		<ul>
+		<li>Validate Forms – Ensure all required fields are entered, Ensure fields are entered as per specific format etc.</li>
+		<li>Create Cookies – Stores and retrieves information on a visitor’s computer.</li>
+		<li>JavaScript can enhance the interfaces HTML gives us.</li>
+		<li>You can use JavaScript to animate elements on a page — for example to show and hide information, or highlight specific sections of a page — this can make for a more usable, richer user experience.</span></li>
+		</ul>
+		<h3 style="color: #e69138;">Equality Operators</h3>
+		<h4>standard equality operators</h4>
+		The standard equality operators (== and !=) compare two operands without regard to their type. If either operand is a number or a boolean, the operands are converted to numbers if possible; else if either operand is a string, the other operand is converted to a string if possible. If both operands are objects, then JavaScript compares internal references which are equal when operands refer to the same object in memory.<br />
+		<ul></ul>
+		Equal (==)<br /><ul></ul>
+		If the two operands are not of the same type, JavaScript converts the operands then applies strict comparison.<br />
+		&nbsp;123 == "123"<br />
+		&nbsp;true == 1<br />
+		<ul></ul>
+		Not equal (!=)<br /><ul></ul>
+		Returns true if the operands are not equal. If the two operands are not of the same type, JavaScript attempts to convert the operands to an appropriate type for the comparison.<br />
+		&nbsp;var1 != 4<br />
+		&nbsp;var1 != "5"<br />
+		<br />
+		<b>strict &nbsp;equality operators</b><br />
+		<br />
+		The strict equality operators (=== and !==) perform equality comparisons on operands of the same type.<br />
+		<br />
+		Strict equal (===)<br />
+		Returns true if the operands are strictly equal with no type conversion.<br />
+		123 == "123"<br />
+		<br />
+		Strict not equal (!==)<br />
+		Returns true if the operands are not equal and/or not of the same type.<br />
+		3 !== '3'<br />
+		<h3 style="color: #e69138;">Console.log</h3>
+		I have also came accross Console.log recently. We can view any messages logged to the console if you use a tool such as Firebug to inspect your code (or whichever tool you decide to use to inspect your code). This is particularly useful when you want to see if a function is executing, or if a variable is being passed/assigned properly or &nbsp;just for figuring out what went wrong with your code.<br /><br />
+		<a href="http://3.bp.blogspot.com/-uxKsG83JlOY/T12z5pvrAUI/AAAAAAAABXs/almrfuu3Umw/s1600/Console.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="153" src="http://3.bp.blogspot.com/-uxKsG83JlOY/T12z5pvrAUI/AAAAAAAABXs/almrfuu3Umw/s320/Console.png" width="320"/></a>
+		<h4 style="clear:both;">Advantages of using Console.log</h4>
+		<ul>
+		<li>it does not halt processes like alert does</li>
+		<li>It is non-blocking</li>
+		<li>You can log objects for instance, and then inspect them.</li>
+		<li>you can see what line of what script threw the log entry without putting the line into your message</li>
+		<li>if you have more than one thing you're debugging it can get real annoying to keep hitting 'ok' on your alert boxes.</li>
+		</ul>
+		<br />
+		Hope it helps you !!
+		</div>
 			</div>
 			<div class="rightNav">						
 				<div class="rightLinks">
+					
 					<div style="height:2px;"></div>
 					<div class="linkHeader">Older Blog Post	</div>
 					<div style="padding-left:10px;">
@@ -107,8 +80,13 @@ Hope it helps you !!</div>
 						</ul>
 					</div>
 				</div>	
+				<iframe src="http://www.facebook.com/plugins/like.php?href=http://mugdham.github.com/" scrolling="no" frameborder="0"
+			style="border:none; width:200px; height:80px"></iframe>
+			</div>			
+			<div style="clear:both;">
+			<div class="js-kit-comments" backwards="yes" paginate="10"></div>	
+			<script src="http://js-kit.com/comments.js"></script>	 
 			</div>
-			
 		</div>	
 		
 </div>
