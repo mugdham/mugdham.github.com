@@ -3,16 +3,45 @@
 <title>Technology Unleashed</title>
 <link rel="stylesheet" href="CSS/Style.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="Javascript/sliderman.1.3.7.js"></script>	
+<script type="text/javascript" src="Javascript/sliderman.1.3.7.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		
+		 $(document).ready(function(){
+	// load index page when the page loads
+	$(".post").load("Home.html");
+	$("#home").click(function(){
+	// load home page on click
+		$(".post").load("Home.html");
+	});
+	$("#about").click(function(){
+	// load about page on click
+		$(".post").load("Aboutme.html");
+	});
+	$("#blogs").click(function(){
+	// load contact form onclick
+		$(".post").load("BlogPost.html");
+	});
+	
+	$("#Unix").click(function(){
+	// load contact form onclick
+		$(".post").load("UnixPost.html");
+	});
+	$("#ignite").click(function(){
+	// load contact form onclick
+		$(".post").load("Ignite2.html");
+	});
+});
+	 </script>		
 </head>
 <body>
 <div class="wrapper">
 		<div class="header">	
 			<div class="pageHeader">Technology Unleashed</div>					
 			<div style="margin-left:10px;">				
-				  <a href="index.html" class="inline tabs">HOME</a>  
-				  <a href="About.html" class="inline tabs">About Me</a>  
-				  <a href="Blogs.html" class="inline tabs">Blogs</a>  		 	 
+				 <a href="#" id="home" class="inline tabs">HOME</a>  
+				  <a href="#" id="about" class="inline tabs">About Me</a>  
+				  <a href="#" id="blogs" class="inline tabs">Blogs</a>  			 	 
 			</div>
 		</div>
 	  
@@ -62,10 +91,10 @@
 					<div class="linkHeader">Older Blog Post	</div>
 					<div style="padding-left:10px;">
 						<ul>
-							<li><a href="Ignite.html" class="text linkHeight" >What is ignite?</a></li>
+							<li><a href="#" id="ignite" class="text linkHeight" >What is ignite?</a></li>
 							<li><a href="Javascript.html" class="text linkHeight" >JavaScript Basics</a></li>
 							<li><a href="Design.html" class="text linkHeight">Why we need to learn UI designing?</a></li>
-							<li><a href="Unix.html" class="text linkHeight">Learning the Unix Way</a></li>
+							<li><a href="#" id="unix" class="text linkHeight">Learning the Unix Way</a></li>
 						</ul>
 					</div>
 				</div>	
