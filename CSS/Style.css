@@ -40,7 +40,7 @@ color: #e69138;
 }
 .header
 {
-height:20%;
+height:25%;
 background-color:#6B6B6B ;
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
@@ -171,10 +171,10 @@ background-color:#226688;
  height:20px;
  font: normal bold 14px Arial; 
  color: #F4F1F4; 
- padding-top: 5px;
+ padding-top: 0 px;
  text-align: center;
   background-color: #B5B5B5;
-  border: 01px solid #313031;
+  border: 1px solid #313031;
   border-radius: 8px;
   text-decoration:none;
  }
